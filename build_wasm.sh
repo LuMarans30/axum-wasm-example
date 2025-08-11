@@ -1,3 +1,5 @@
+# This script is based on [this guide](https://fourteenscrews.com/essays/look-ma-no-wasm-pack/)
+
 cargo install wasm-bindgen-cli wasm-opt
 rm -r ./pkg
 echo "Compiling Rust to WASM..."
