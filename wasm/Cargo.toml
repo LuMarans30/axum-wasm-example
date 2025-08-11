@@ -1,0 +1,13 @@
+[package]
+name = "wasm"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+color-eyre = {workspace = true}
+wasm-bindgen = "0.2.100"
+web-sys = { version = "0.3.77", features = ['Document', 'Element', 'HtmlElement', 'Node', 'Window', 'HtmlCanvasElement', 'CanvasRenderingContext2d', 'HtmlImageElement'] }
+wgpu = "26.0.1"
