@@ -9,5 +9,13 @@ crate-type = ["cdylib"]
 [dependencies]
 color-eyre = {workspace = true}
 wasm-bindgen = "0.2.100"
-web-sys = { version = "0.3.77", features = ['Document', 'Element', 'HtmlElement', 'Node', 'Window', 'HtmlCanvasElement', 'CanvasRenderingContext2d', 'HtmlImageElement'] }
+web-sys = { version = "0.3.77", features = [
+  "console",
+  "Document",
+  "Element",
+  "HtmlCanvasElement",
+  "CanvasRenderingContext2d",
+  "Window",
+  "Performance",
+] }
 wgpu = "26.0.1"
